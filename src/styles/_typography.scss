@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500;800&family=Open+Sans&display=swap");
+
+@mixin fonts {
+	--FONT-FAMILY-BALOO-PAAJI: "Baloo Paaji 2", var(--font-stack-sans);
+	--FONT-FAMILY-OPEN-SANS: "Open Sans", var(--font-stack-sans);
+	--font-stack-sans: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+		"Liberation Sans", Arial, Roboto, sans-serif;
+}

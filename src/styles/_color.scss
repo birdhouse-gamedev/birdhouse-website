@@ -1,0 +1,21 @@
+@mixin colors {
+	// Base
+
+	--COLOR_ORANGE_0: rgb(245, 78, 0);
+
+	--COLOR_GRAY_-2: hsl(240, 4.1%, 14.3%);
+	--COLOR_GRAY_-3: hsl(240, 6.3%, 12.5%);
+
+	//////////////////////////////////////////
+	// Brand
+
+	--COLOR_PRIMARY_0: var(--COLOR_ORANGE_0);
+
+	--COLOR_NEUTRAL_-3: var(--COLOR_GRAY_-3);
+
+	//////////////////////////////////////////
+	// Semantic
+
+	--COLOR-BACKGROUND: var(--COLOR_NEUTRAL_-3);
+	--COLOR-FOREGROUND: white;
+}

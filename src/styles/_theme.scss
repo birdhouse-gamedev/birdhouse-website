@@ -1,0 +1,32 @@
+@use 'layout';
+@use 'typography';
+@use 'color';
+
+:root {
+	@include layout.breakpoints;
+	@include typography.fonts;
+	@include color.colors;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	@media (max-width: 50em) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	font-family: var(--FONT-FAMILY-OPEN-SANS);
+	font-size: 1.5em;
+
+	background-color: var(--COLOR-BACKGROUND);
+	color: var(--COLOR-FOREGROUND);
+}
