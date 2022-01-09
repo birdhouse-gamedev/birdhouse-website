@@ -15,7 +15,8 @@
 			<br />
 			<br />
 			Check out
-			<a href="https://www.youtube.com/channel/UCMwSZq-wKJW2e0DgG1GOi8Q">the Birdhouse channel</a
+			<a href="https://www.youtube.com/channel/UCMwSZq-wKJW2e0DgG1GOi8Q"
+				>the Birdhouse channel</a
 			>
 			for tutorials, devlogs, and updates about Bevy.
 			<br />
@@ -36,13 +37,20 @@
 		justify-content: center;
 		padding-top: 32px;
 		img {
-			width: 120px;
+			width: 80px;
+			@media (min-width: 50em) {
+				width: 120px;
+			}
 		}
 		h1 {
 			font-family: var(--FONT-FAMILY-BALOO-PAAJI);
-			font-size: 64px;
-			margin-top: 48px;
+			font-size: 32px;
+			margin-top: 40px;
 			line-height: 1;
+			@media (min-width: 50em) {
+				font-size: 64px;
+				margin-top: 48px;
+			}
 		}
 	}
 	main {
@@ -55,6 +63,11 @@
 			text-align: center;
 			max-width: 720px;
 			line-height: 1.5;
+			padding: 0 16px;
+			font-size: 1.2em;
+			@media (min-width: 50em) {
+				font-size: 1.5em;
+			}
 		}
 		.discord {
 			width: 256px;
